@@ -119,13 +119,13 @@ Ties x amount of LEDs to a x-position [rotary switch](../../../../switch-library
 {% endtab %}
 
 {% tab title="Example" %}
-void rotaryLED(switchNumber, startLED,  positions, color, brightness,  offset, reverse, backgroundColor, backgroundBrightness)
+void rotaryLED(analogChannel, startLED,  positions, color, brightness,  offset, reverse, backgroundColor, backgroundBrightness)
 
 Typed out and explained:
 
 ```
 rotaryLED(
-2, //------------Tie to analog switch # 2
+2, //------------Tie to analog channel # 2
 0, //------------Starting on LED number 0
 12, //-----------This is a 12 position switch. LED numbers 0-11 will be used.
 0x0000FF //------Blue color
